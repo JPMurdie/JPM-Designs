@@ -1,0 +1,54 @@
+/*npm install -g sass sass --watch assets/sass/input.scss assets/css/output.css*/
+
+/* SASS Variables */
+
+$testColor: lightblue;
+$testColor2: lightgreen;
+
+/* Element resets */
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-color: black;
+}
+
+/* Test Styles */
+
+
+/* Header Styles */
+
+/* Body Styles */
+
+.slideContainer {
+    height: 80%;
+    width: 100%;
+    background-color: black;
+    border: 1px solid black;
+    overflow: hidden;
+    position: relative;
+}
+
+.projectSlide, .bioSlide {
+    position: absolute;
+    background-color: $testColor2;
+    height: 90%;
+    width: 90%;
+    top: 5%;
+}
+
+.projectSlide {
+    left: -110%;
+}
+
+.bioSlide {
+    left: 5%;
+}
+/* Body P-Classes */
+
