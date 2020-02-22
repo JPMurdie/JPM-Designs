@@ -33,8 +33,14 @@ body {
 
 /* Body Styles */
 
-.slideContainer {
+.paddingContainer {
     height: 80%;
+    width: 100%;
+    position: relative;
+}
+
+.slideContainer {
+    height: 100%;
     width: 100%;
     background-color: White;
     border: 1px solid darkgray;
