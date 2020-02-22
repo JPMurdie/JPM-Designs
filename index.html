@@ -14,9 +14,9 @@
 
 
 <body>
-	<header>
+	<!--<header>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand" href="#">JPM Designs</a>
+			<a id="myHome" class="navbar-brand" onclick="slideInfo(this.id)">JPM Designs</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -26,10 +26,10 @@
 						<a id="myProjects" class="nav-link" onclick="slideInfo(this.id)">My Projects</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Testimonials</a>
+						<a id="myTestimonials" class="nav-link" onclick="slideInfo(this.id)">Testimonials</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Contact Me</a>
+						<a id="myContactMe" class="nav-link" onclick="slideInfo(this.id)">Contact Me</a>
 					</li>
 				</ul>
 			</div>
@@ -42,13 +42,39 @@
 			</div>
 
 		</nav>
+	</header>-->
+
+	<header>
+		<nav id="myNav" class="nav">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 text-center">
+						<h3 id="myHome" onclick="slideInfo(this.id)" >JPM Designs</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-3 p-1 text-center">
+                        <button id="myProjects" type="button" class="btn btn-secondary navBtn" onclick="slideInfo(this.id)">My Projects</button>
+					</div>
+					<div class="col-3 p-1 text-center">
+                        <button id="myTestimonials" type="button" class="btn btn-secondary navBtn" onclick="slideInfo(this.id)">Testimonials</button>
+					</div>
+					<div class="col-3 p-1 text-center">
+                        <button id="myContactMe" type="button" class="btn btn-secondary navBtn" onclick="slideInfo(this.id)">Contact Me</button>
+					</div>
+					<div class="col-3 p-1 text-center">
+                        <button id="myResume" type="button" class="btn btn-secondary navBtn" onclick="slideInfo(this.id)">My Resume</button>
+					</div>
+				</div>
+			</div>
+		</nav>
 	</header>
 
 
 
 	<div class="container slideContainer p-5 my-2">
 
-    		<div class="bioSlide p-2">
+		<div class="bioSlide p-2">
 			<div class="container">
 				<div class="row">
 					<div class="col-6">
@@ -67,7 +93,33 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="testimonialSlide p-2">
+			<div class="container">
+				<div class="row">
+					<div class="col-6">
+						<h3>My Testimonials</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="contactMeSlide p-2">
+			<div class="container">
+				<div class="row">
+					<div class="col-6">
+						<h3>My Contact</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</div>
+
+	<footer id="myFooter">
+		<div class="container">
+		</div>
+	</footer>
 
 	<!--<div class="container slideContainer p-5">
 <div class="infoSlide">

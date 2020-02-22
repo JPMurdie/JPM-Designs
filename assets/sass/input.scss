@@ -4,6 +4,9 @@
 
 $testColor: lightblue;
 $testColor2: lightgreen;
+$testColor3: lightpink;
+$testColor4: lightyellow;
+$testColor5: lightgrey;
 
 /* Element resets */
 
@@ -24,31 +27,67 @@ body {
 
 /* Header Styles */
 
+.navBtn {
+    font-size: .5em;
+}
+
 /* Body Styles */
 
 .slideContainer {
     height: 80%;
     width: 100%;
-    background-color: black;
-    border: 1px solid black;
+    background-color: White;
+    border: 1px solid darkgray;
+    border-radius: 5px;
     overflow: hidden;
     position: relative;
+
+    -webkit-box-shadow: inset 0px 0px 20px 10px rgba(87, 87, 87, 0.5);
+    -moz-box-shadow: inset 0px 0px 20px 10px rgba(87, 87, 87, 0.5);
+    box-shadow: inset 0px 0px 20px 10px rgba(87, 87, 87, 0.5);
+
+
+
 }
 
-.projectSlide, .bioSlide {
+.projectSlide, .bioSlide, .testimonialSlide, .contactMeSlide {
     position: absolute;
-    background-color: $testColor2;
     height: 90%;
     width: 90%;
-    top: 5%;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
 }
 
 .projectSlide {
-    left: -110%;
+    background-color: $testColor2;
+    right: -100%;
+    top: 5%;
 }
 
 .bioSlide {
+    background-color: $testColor3;
     left: 5%;
+    top: 5%;
 }
+
+.testimonialSlide {
+    background-color: $testColor4;
+    top: +100%;
+    left: 5%;
+    
+}
+
+.contactMeSlide {
+    background-color: $testColor5;
+    left: -100%;
+    top: 5%;
+}
+
+#myFooter, #myTitle, #myNav {
+    height: 10vh;
+    background-color: white;
+}
+
 /* Body P-Classes */
 
