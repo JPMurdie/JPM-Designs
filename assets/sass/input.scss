@@ -8,11 +8,16 @@ $testColor3: lightpink;
 $testColor4: lightyellow;
 $testColor5: rgb(226, 226, 226);
 
+/* Font Imports */
+
+@import url('https://fonts.googleapis.com/css?family=Acme|Cabin|Dancing+Script|Indie+Flower&display=swap');
+
 /* Element resets */
 
 html {
     padding: 0;
     margin: 0;
+    font-family: "Cabin", sans-serif;
 }
 
 body {
@@ -20,6 +25,7 @@ body {
     margin: 0;
     height: 100vh;
     background-color: black;
+    font-family: "Cabin", sans-serif;
 }
 
 /* Test Styles */
@@ -27,14 +33,37 @@ body {
 
 /* Header Styles */
 
+#titleCol {
+    background-color: black;
+}
+
 .navBtn {
     font-size: .5em;
 }
 
+#myHome {
+    font-family: "Dancing Script", sans-serif;
+    color: white;
+}
+
+#navCol {
+    font-family: "Dancing Script", sans-serif;
+    color: white;
+    background-color: black;
+}
+
+
 /* Body Styles */
+
+#slideContainer {
+    background-image: url("../imgs/sliderContainerBack.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 .bioText {
     font-size: 0.75em;
+    margin-bottom: 0.5rem;
 }
 
 .profileImg {
@@ -42,7 +71,7 @@ body {
     width: 100px;
     background-image: url("../imgs/profile.jpg");
     background-size: contain;
-    border-radius: 50%;
+    border-radius: 5px;
     border: solid 1px grey;
 }
 
@@ -90,7 +119,7 @@ body {
 }
 
 .bioSlide {
-    background-color: $testColor5;
+    background-color: rgba(226, 226, 226, .60);
     left: 5%;
     top: 5%;
 }

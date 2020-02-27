@@ -48,40 +48,43 @@
 		<nav id="myNav" class="nav">
 			<div class="container">
 				<div class="row">
-					<div class="col-12 text-center">
-						<h3 id="myHome" onclick="slideInfo(this.id)">J P Murdie</h3>
+					<div id="titleCol" class="col-12 p-1 text-center">
+						<h3 id="myHome" onclick="slideInfo(this.id)">J P Murdie;</h3>
+					</div>
+					<div id="navCol" class="col-12">
+						<div class="row">
+							<div class="col-3 p-1 text-center">
+								<button id="myProjects" type="button" class="btn btn-secondary navBtn" onclick="slideInfo(this.id)">My Projects</button>
+							</div>
+							<div class="col-3 p-1 text-center">
+								<button id="myTestimonials" type="button" class="btn btn-secondary navBtn" onclick="slideInfo(this.id)">Testimonials</button>
+							</div>
+							<div class="col-3 p-1 text-center">
+								<button id="myContactMe" type="button" class="btn btn-secondary navBtn" onclick="slideInfo(this.id)">Contact Me</button>
+							</div>
+							<div class="col-3 p-1 text-center">
+								<button id="myResume" type="button" class="btn btn-secondary navBtn" onclick="slideInfo(this.id)">My Resume</button>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-3 p-1 text-center">
-						<button id="myProjects" type="button" class="btn btn-secondary navBtn" onclick="slideInfo(this.id)">My Projects</button>
-					</div>
-					<div class="col-3 p-1 text-center">
-						<button id="myTestimonials" type="button" class="btn btn-secondary navBtn" onclick="slideInfo(this.id)">Testimonials</button>
-					</div>
-					<div class="col-3 p-1 text-center">
-						<button id="myContactMe" type="button" class="btn btn-secondary navBtn" onclick="slideInfo(this.id)">Contact Me</button>
-					</div>
-					<div class="col-3 p-1 text-center">
-						<button id="myResume" type="button" class="btn btn-secondary navBtn" onclick="slideInfo(this.id)">My Resume</button>
-					</div>
-				</div>
+
 			</div>
 		</nav>
 	</header>
 
 	<div class="paddingContainer my-2 p-2">
 
-		<div class="container slideContainer text-center p-5">
+		<div id="slideContainer" class="container slideContainer text-center p-5">
 
-			<div class="bioSlide p-2">
-				<div class="container my-3">
+			<div class="bioSlide p-2" style="top: 4.99548%;">
+				<div class="container mt-2">
 					<div class="row">
-						<div class="col-12 mt-1">
+						<div class="col-12 my-1">
 							<div class="profileImg m-auto">
 							</div>
 						</div>
-						<div class="col-12 mt-2">
+						<div class="col-12 my-1">
 							<p class="bioText">My name is Jason Murdie. I am training to be a fullstack web developer.
 							</p>
 							<p class="bioText">I am currently progressing through the Fullstack Web Developer course
@@ -90,52 +93,59 @@
 								testing principles. Getting the basics correct is a perfect foundation for the fun that
 								follows.</p>
 						</div>
-						<div class="col-12 mt-2">
-                        <hr>
+						<div class="col-12">
+							<hr class="my-1">
 							<div class="div text-left">
 								<h6>My Skills</h6>
 							</div>
 							<div class="progress">
-								<div class="progress-bar bg-info" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-									aria-valuemax="100" style="width:80%">
-                                    <span class="sr-only">80% complete</span>
+								<div class="progress-bar bg-info" role="progressbar" aria-valuenow="80"
+									aria-valuemin="0" aria-valuemax="100" style="width:80%">
+									<span class="sr-only">80% complete</span>
 								</div>
-                                <span class="progress-type">UX / Design</span>
+								<span class="progress-type">UX / Design</span>
 							</div>
 							<div class="progress">
 								<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
 									aria-valuemax="100" style="width:90%">
-                                    <span class="sr-only">90% complete</span>
+									<span class="sr-only">90% complete</span>
 								</div>
-                                <span class="progress-type">HTML / HTML5</span>
+								<span class="progress-type">HTML / HTML5</span>
 							</div>
 							<div class="progress">
-								<div class="progress-bar bg-success" role="progressbar" aria-valuenow="95" aria-valuemin="0"
-									aria-valuemax="100" style="width:95%">
-                                    <span class="sr-only">95% complete</span>
+								<div class="progress-bar bg-success" role="progressbar" aria-valuenow="95"
+									aria-valuemin="0" aria-valuemax="100" style="width:95%">
+									<span class="sr-only">95% complete</span>
 								</div>
-                                <span class="progress-type">CSS / CSS3</span>
+								<span class="progress-type">CSS / CSS3</span>
 							</div>
 							<div class="progress">
-								<div class="progress-bar bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-									aria-valuemax="100" style="width:75%">
-                                    <span class="sr-only">75% complete</span>
+								<div class="progress-bar bg-warning" role="progressbar" aria-valuenow="75"
+									aria-valuemin="0" aria-valuemax="100" style="width:75%">
+									<span class="sr-only">75% complete</span>
 								</div>
-                                <span class="progress-type">JavaScript / JQuery</span>
+								<span class="progress-type">JavaScript / JQuery</span>
 							</div>
 							<div class="progress">
-								<div class="progress-bar bg-danger" role="progressbar" aria-valuenow="30" aria-valuemin="0"
-									aria-valuemax="100" style="width:30%">
-                                    <span class="sr-only">30% complete</span>
+								<div class="progress-bar bg-danger" role="progressbar" aria-valuenow="30"
+									aria-valuemin="0" aria-valuemax="100" style="width:30%">
+									<span class="sr-only">30% complete</span>
 								</div>
-                                <span class="progress-type">Django / Python</span>
+								<span class="progress-type">Django / Python</span>
+							</div>
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="35" aria-valuemin="0"
+									aria-valuemax="100" style="width:35%">
+									<span class="sr-only">35% complete</span>
+								</div>
+								<span class="progress-type">Agile</span>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="projectSlide p-2">
+			<div class="projectSlide p-2" style="right: -99.9998%;">
 				<div class="container">
 					<div class="row">
 						<div class="col-6">
@@ -145,7 +155,7 @@
 				</div>
 			</div>
 
-			<div class="testimonialSlide p-2">
+			<div class="testimonialSlide p-2" style="top: 100.003%;">
 				<div class="container">
 					<div class="row">
 						<div class="col-6">
@@ -155,7 +165,7 @@
 				</div>
 			</div>
 
-			<div class="contactMeSlide p-2">
+			<div class="contactMeSlide p-2" style="left: -99.9998%;">
 				<div class="container">
 					<div class="row">
 						<div class="col-6">
@@ -253,6 +263,8 @@
 		<script src="assets/js/scripts.js"></script>
 		<script src="assets/js/unitTests.js"></script>
 	</div>
+
+
 
 </body>
 
