@@ -40,7 +40,13 @@ body {
 
 /* Body Styles */
 #slideContainer {
-  background-image: url("../imgs/sliderContainerBack.jpg");
+  background-image: url("../imgs/sliderContainerBackPlains.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#slideContainer2 {
+  background-image: url("../imgs/sliderContainerBackPlains.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -63,6 +69,7 @@ body {
   height: 80%;
   width: 100%;
   position: relative;
+  transition: opacity 1s ease-in-out;
 }
 
 .slideContainer {
