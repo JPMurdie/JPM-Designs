@@ -30,12 +30,38 @@ body {
 #myHome {
   font-family: "Dancing Script", sans-serif;
   color: white;
+  cursor: pointer;
 }
 
+#myHome:hover {
+  color: white;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+  overflow: visible;
+}
+
+#myProjects:hover, #myTestimonials:hover, #myProjects:hover {
+  color: white;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+  overflow: visible;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 2px #fff, 0 0 20px #fff, 0 0 30px #15bafc, 0 0 40px #15bafc, 0 0 50px #15bafc, 0 0 60px #15bafc, 0 0 70px #15bafc;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #15bafc, 0 0 40px #15bafc, 0 0 50px #15bafc, 0 0 60px #15bafc, 0 0 70px #15bafc;
+  }
+}
 #navCol {
   font-family: "Dancing Script", sans-serif;
   color: white;
   background-color: black;
+  cursor: pointer;
 }
 
 /* Body Styles */
